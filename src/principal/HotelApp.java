@@ -9,6 +9,13 @@ import validador.Validador;
 
 public class HotelApp {
 
+    public static final int EJECUTAR_MENU = 1;
+    public static final int LISTAR = 2;
+    public static final int IMPRIMIR = 3;
+    public static final int SIE = 4;
+    public static final int INFORME = 5;
+    public static final int SALIR = 6;
+
     private static Output output;
     private static Input input;
     private static boolean quiereSeguir;
@@ -34,8 +41,6 @@ public class HotelApp {
 
         }while (quiereSeguir);
 
-
-
     }
 
     private static boolean opcionValida() {
@@ -55,15 +60,15 @@ public class HotelApp {
     private static void gestionhotel() {
 
         switch (opcionMenu){
-            case 1 ->{
+            case EJECUTAR_MENU ->{
                 gChecks.ejecutarMenuCheckin();
 
             }
-            case 2 ->{gChecks.listarCheckout();}
-            case 3 ->{gHabs.imprimirTablero();}
-            case 4 ->{System.out.println("SIE");}
-            case 5 ->{System.out.println("Informe");}
-            case 6 ->{quiereSeguir = false;}
+            case LISTAR ->{gChecks.listarCheckout();}
+            case IMPRIMIR ->{gHabs.imprimirTablero();}
+            case SIE ->{System.out.println("SIE");}
+            case INFORME ->{System.out.println("Informe");}
+            case SALIR ->{quiereSeguir = false;}
         }
     }
 
