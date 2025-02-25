@@ -4,6 +4,8 @@ import java.util.Scanner;
 
 public class Input {
 
+    //codigo correcto
+
     int numero;
     String palabra;
     double numDouble;
