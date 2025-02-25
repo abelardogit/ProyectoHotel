@@ -7,19 +7,19 @@ public class Input {
     int numero;
     String palabra;
     double numDouble;
-    Scanner sc = new Scanner(System.in);
+    Scanner scannerValue = new Scanner(System.in);
 
 
     private  void numero(){
-        numero = Integer.parseInt(sc.nextLine());
+        numero = scannerValue.nextInt();
     }
 
     private  void palabra(){
-        palabra = sc.nextLine();
+        palabra = scannerValue.nextLine();
     }
 
     private  void numdouble(){
-        numDouble = Double.parseDouble(sc.nextLine());
+        numDouble = Double.parseDouble(scannerValue.nextLine());
     }
 
 

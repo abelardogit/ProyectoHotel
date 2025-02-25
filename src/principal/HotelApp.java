@@ -11,7 +11,7 @@ public class HotelApp {
 
     private static Output output;
     private static Input input;
-    private static boolean quiereSeguir;
+    private static boolean usuarioQuiereSeguir;
     private static int opcionMenu;
     private static  GestionChecks gChecks;
     private static Habitaciones gHabs;
@@ -22,7 +22,7 @@ public class HotelApp {
         gChecks = new GestionChecks();
         input = new Input();
         output = new Output();
-        quiereSeguir = true;
+        usuarioQuiereSeguir = true;
 
 
         do {
@@ -32,7 +32,7 @@ public class HotelApp {
            }while(!opcionValida());
             gestionhotel();
 
-        }while (quiereSeguir);
+        }while (usuarioQuiereSeguir);
 
 
 
@@ -63,7 +63,8 @@ public class HotelApp {
             case 3 ->{gHabs.imprimirTablero();}
             case 4 ->{System.out.println("SIE");}
             case 5 ->{System.out.println("Informe");}
-            case 6 ->{quiereSeguir = false;}
+            case 6 ->{
+                usuarioQuiereSeguir = false;}
         }
     }
 
