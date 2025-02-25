@@ -37,7 +37,7 @@ public class Habitaciones {
             }
         }
 
-
+// cometario
 
 
         private boolean tableroLleno() {
