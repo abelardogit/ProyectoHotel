@@ -13,4 +13,20 @@ public class Output {
                 6. Salir
                 """);
     }
+
+    public void mostrarMenu(){
+        System.out.println("cambio1 ");
+    }
+
+    public void mostrarMenu(){
+        System.out.println("cambio2 ");
+    }
+
+    public void mostrarMenu(){
+        System.out.println("cambio2 ");
+    }
+    public void mostrarMenu(){
+        System.out.println("cambio4 ");
+    }
+
 }
